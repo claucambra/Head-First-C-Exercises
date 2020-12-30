@@ -20,8 +20,7 @@ island* create(char *name) {
   return i;
 }
 
-void release(island *i)
-{
+void release(island *i) {
   island *next = NULL;
   while (i != NULL) {
     next = i->next;
@@ -30,8 +29,8 @@ void release(island *i)
     i = next;
   }
 }
-void display(island *start)
-{
+
+void display(island *start) {
   island *i = start;
   for (;i != NULL; i = i->next) {
     printf("Name: %s open: %s-%s\n", i->name, i->opens, i->closes);

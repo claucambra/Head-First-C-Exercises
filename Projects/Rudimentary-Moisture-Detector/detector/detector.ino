@@ -21,7 +21,7 @@ int fedPrint(int currentResult) {
 void loop() {
   // put your main code here, to run repeatedly:
   int conductivity = analogRead(readPin);
-  //Serial.println(conductivity);
+  Serial.println(conductivity);
 
   if(conductivity < 200) {
     digitalWrite(13, LOW);
